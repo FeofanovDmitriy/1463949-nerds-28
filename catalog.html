@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page"  lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="header">
       <div class="container">
         <div class="menu">
@@ -28,56 +28,47 @@
         </div>
       </div>
     </header>
-    <main>
-        <h1 class="main__title main__title--catalog">Магазин готовых шаблонов</h1>
-        <section class="container container__catalog">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form action="https://echo.htmlacademy.ru/" method="GET" class="filter">
-              <span class="filter__title filter__title--price">Стоимость:</span>
-              <div class="filter__range">
-                <div class="filter__scale">
-                  <div class="filter__bar"></div>
-                </div>
-                <div class="filter__toggle filter__toggle--min"></div>
-                <div class="filter__toggle filter__toggle--max"></div>
-              </div>
-              <div class="filter__price">
-                <label class="filter__value filter__value--min-price">от <input class="filter__value-input" name="min-price" type="text" value="0"></label>
-                <label class="filter__value filter__value--max-price">до <input class="filter__value-input" name="max-price" type="text" value="15000"></label>
-              </div>
-              <div class="filter__grid">
-                <span class="filter__title">Сетка</span>
-                <input type="radio" class="filter__radio" name="grid" id="adaptive" value="adaptive">
-                <label class="filter__label filter__label--radio" for="adaptive">Адаптивная</label>
-                <input type="radio" class="filter__radio" name="grid" id="fluid" value="fluid" checked>
-                <label class="filter__label filter__label--radio" for="fluid">Резиновая</label>
-                <input type="radio" class="filter__radio" name="grid" id="fix" value="fix">
-                <label class="filter__label filter__label--radio" for="fix">Фиксированная</label>
-              </div>
-              <div class="filter__features">
-                <span class="filter__title">Особенности:</span>
-                <input type="checkbox" class="filter__check" name="slider" id="slider" checked>
-                <label class="filter__label filter__label--check" for="slider">Слайдер</label>
-                <input type="checkbox" class="filter__check" name="advantage" id="advantage">
-                <label class="filter__label filter__label--check" for="advantage">Блок преимуществ</label>
-                <input type="checkbox" class="filter__check" name="news" id="news" checked>
-                <label class="filter__label filter__label--check" for="news">Новости</label>
-                <input type="checkbox" class="filter__check" name="gallery" id="gallery">
-                <label class="filter__label filter__label--check" for="gallery">Галерея</label>
-                <input type="checkbox" class="filter__check" name="basket" id="basket">
-                <label class="filter__label filter__label--check" for="basket">Корзина</label>
-              </div>
-              <button class="filter__button" type="submit">Показать</button>
-            </form>
-          </section>
-          <div>
-            <ul><span>Сортировать:</span>
-              <li><a href="">По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По названию</a></li>
-            </ul>
+    <main class="main">
+      <h1 class="main__title main__title--catalog">Магазин готовых шаблонов</h1>
+      <div class="container container__catalog">
+        <form action="ttps://echo.htmlacademy.ru" method="GET" class="filter">
+          <span class="filter__title filter__title--price">Стоимость:</span>
+          <div class="filter__range">
+            <div class="filter__scale">
+              <div class="filter__bar"></div>
+            </div>
+            <div class="filter__toggle filter__toggle--min"></div>
+            <div class="filter__toggle filter__toggle--max"></div>
           </div>
-        <section class="class="catalog>
+          <div class="filter__price">
+            <label class="filter__value filter__value--min-price">от <input class="filter__value-input" name="min-price" type="text" value="0"></label>
+            <label class="filter__value filter__value--max-price">до <input class="filter__value-input" name="max-price" type="text" value="15000"></label>
+          </div>
+          <div class="filter__grid">
+            <span class="filter__title">Сетка</span>
+            <input type="radio" class="filter__radio" name="grid" id="adaptive" value="adaptive">
+            <label class="filter__label filter__label--radio" for="adaptive">Адаптивная</label>
+            <input type="radio" class="filter__radio" name="grid" id="fluid" value="fluid" checked>
+            <label class="filter__label filter__label--radio" for="fluid">Резиновая</label>
+            <input type="radio" class="filter__radio" name="grid" id="fix" value="fix">
+            <label class="filter__label filter__label--radio" for="fix">Фиксированная</label>
+          </div>
+          <div class="filter__features">
+            <span class="filter__title">Особенности:</span>
+            <input type="checkbox" class="filter__check" name="slider" id="slider" checked>
+            <label class="filter__label filter__label--check" for="slider">Слайдер</label>
+            <input type="checkbox" class="filter__check" name="advantage" id="advantage">
+            <label class="filter__label filter__label--check" for="advantage">Блок преимуществ</label>
+            <input type="checkbox" class="filter__check" name="news" id="news" checked>
+            <label class="filter__label filter__label--check" for="news">Новости</label>
+            <input type="checkbox" class="filter__check" name="gallery" id="gallery">
+            <label class="filter__label filter__label--check" for="gallery">Галерея</label>
+            <input type="checkbox" class="filter__check" name="basket" id="basket">
+            <label class="filter__label filter__label--check" for="basket">Корзина</label>
+          </div>
+          <button class="filter__button" type="submit">Показать</button>
+        </form>
+        <div class="catalog">
           <div class="catalog__filter">
             <ul class="catalog__sort"><span class="catalog__sort-title">Сортировать:</span>
               <li class="catalog__sort-item catalog__sort-item--active"><a href="">По цене</a></li>
@@ -99,7 +90,7 @@
               </div>
             </div>
             </div>
-            <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/cards/img-pink.jpg" width="358px" height="576px" alt="Pink app"></a>
+            <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/cards/img-pink.jpg" width="360" height="576" alt="Pink app"></a>
               <div class="catalog__hover">
               <div class="catalog__hover-wrp">
               <h2 class="catalog__title">Pink app</h2>
@@ -108,7 +99,7 @@
               </div>
             </div>
             </div>
-            <div class="catalog__item">  <a class="catalog__item-link" href="#"><img src="img/cards/img-barbershop.jpg" width="364px" height="582px" alt="Barbershop"></a>
+            <div class="catalog__item">  <a class="catalog__item-link" href="#"><img src="img/cards/img-barbershop.jpg" width="360" height="576" alt="Barbershop"></a>
               <div class="catalog__hover">
               <div class="catalog__hover-wrp">
               <h2 class="catalog__title">Barbershop</h2>
@@ -117,7 +108,7 @@
               </div>
             </div>
             </div>
-            <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/cards/img-mishka.jpg" width="362px" height="580px" alt="Mishka"></a>
+            <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/cards/img-mishka.jpg" width="360" height="576" alt="Mishka"></a>
               <div class="catalog__hover">
               <div class="catalog__hover-wrp">
               <h2 class="catalog__title">Mishka</h2>
@@ -126,7 +117,7 @@
               </div>
             </div>
             </div>
-            <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/cards/img-aplus.jpg" width="364px" height="582px" alt="A Plus"></a>
+            <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/cards/img-aplus.jpg" width="360" height="576" alt="A Plus"></a>
               <div class="catalog__hover">
               <div class="catalog__hover-wrp">
               <h2 class="catalog__title">A Plus</h2>
@@ -135,7 +126,7 @@
               </div>
             </div>
             </div>
-            <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/cards/img-kvast.jpg" width="362px" height="580px" alt="Кваст"></a>
+            <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/cards/img-kvast.jpg" width="360" height="576" alt="Кваст"></a>
               <div class="catalog__hover">
               <div class="catalog__hover-wrp">
               <h2 class="catalog__title">Кваст</h2>
@@ -152,23 +143,22 @@
             <a href="#" class="paginator__link paginator--next">Следующая</a>
           </div>
         </div>
-          <!-- Карточки товаров -->
-    </main>
-    <footer>
-      <div class="container">
-        <footer class="footer">
-          <div class="footer__contacts">
-            <a href="#" class="footer__item footer__item--vk">Вконтакте</a>
-            <a href="#" class="footer__item footer__item--fb">Фейсбук</a>
-            <a href="#" class="footer__item footer__item--ig">Инстаграмм</a>
-          </div>
-          <div class="footer__text">
-            <p class="footer__text-slogan">Давайте дружить, это выгодно!</p>
-            <p class="footer__text-offer">Скидка 10% для друзей из социальных сетей.</p>
-          </div>
-        </footer>
       </div>
-    </footer>    
+    </main>
+    <main>
+    <div class="container">
+    <footer class="footer">
+      <div class="footer__contacts">
+        <a href="#" class="footer__item footer__item--vk">Вконтакте</a>
+        <a href="#" class="footer__item footer__item--fb">Фейсбук</a>
+        <a href="#" class="footer__item footer__item--ig">Инстаграмм</a>
+      </div>
+      <div class="footer__text">
+        <p class="footer__text-slogan">Давайте дружить, это выгодно!</p>
+        <p class="footer__text-offer">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+    </footer>
+    </div>  
     <section>
       <img src="img/map/map 1.png" width="1440px" height="416px" alt="Карта">
       <img src="img/map/map-marker 1.png" width="231px" height="190px" alt="Маркер на карте">
