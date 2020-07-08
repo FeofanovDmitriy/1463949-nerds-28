@@ -70,7 +70,8 @@
         </form>
         <div class="catalog">
           <div class="catalog__filter">
-            <ul class="catalog__sort"><span class="catalog__sort-title">Сортировать:</span>
+            <ul class="catalog__sort">
+              <li class="catalog__sort-title">Сортировать:</li>
               <li class="catalog__sort-item catalog__sort-item--active"><a href="">По цене</a></li>
               <li class="catalog__sort-item"><a href="#">По типу</a></li>
               <li class="catalog__sort-item"><a href="#">По названию</a></li>
@@ -81,7 +82,7 @@
           </div>
           </div>
           <div class="catalog__list">
-            <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/cards/img-sedona.jpg" width="360px" height="576px" alt="Макет Седона"></a>
+            <div class="catalog__item"><a class="catalog__item-link" href="#"><img src="img/cards/img-sedona.jpg" width="360" height="576" alt="Макет Седона"></a>
               <div class="catalog__hover">
               <div class="catalog__hover-wrp">
               <h2 class="catalog__title">Седона</h2>
@@ -145,7 +146,6 @@
         </div>
       </div>
     </main>
-    <main>
     <div class="container">
     <footer class="footer">
       <div class="footer__contacts">
@@ -159,9 +159,7 @@
         </div>
     </footer>
     </div>  
-    <section>
-      <img src="img/map/map 1.png" width="1440px" height="416px" alt="Карта">
-      <img src="img/map/map-marker 1.png" width="231px" height="190px" alt="Маркер на карте">
+    <section class="feedback">
         <h2>NЁRDS DESIGN STUDIO</h2>
         <p>91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
@@ -179,16 +177,17 @@
           </p>
           <p>
             <label for="appointment-message">Текс письма</label>
-            <textarea id="appointment-message" type="text" name="message" placeholder="В свободной форме" rows="2" required></textarea>
+            <textarea id="appointment-message" name="message" placeholder="В свободной форме" rows="2" required></textarea>
           </p>
           <button type="submit">Отправить</button>
         </form>
         <button type="button">Закрыть</button>
       </section>
       
-      <section>
+      <section class="map" >
         <h2>Как до нас добраться</h2>
-        <!-- Здесь будет карта -->
+        <img src="img/map/map-1.png" width="1440" height="416" alt="Карта">
+        <img src="img/map/map-marker-1.png" width="231" height="190" alt="Маркер на карте">
         <button type="button">Закрыть</button>
       </section>  
   </body>
