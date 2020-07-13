@@ -1113,7 +1113,7 @@ input[type=checkbox]:checked + label::before {
   height: 100%;
   background: rgba(0, 0, 0, .5);
 }
-
+ 
 .modal__overlay-shadow
 {
     display: block;
